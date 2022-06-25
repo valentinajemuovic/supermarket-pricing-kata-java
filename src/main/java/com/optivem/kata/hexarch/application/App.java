@@ -9,10 +9,6 @@ public class App {
         this.discountRateRepository = discountRateRepository;
     }
 
-    public Discounting getDiscounting() {
-        return new DiscountingImpl(discountRateRepository);
-    }
-
     public ProductManagement getProductManagement() {
         return new ProductManagementImpl(productRepository, discountRateRepository);
     }
