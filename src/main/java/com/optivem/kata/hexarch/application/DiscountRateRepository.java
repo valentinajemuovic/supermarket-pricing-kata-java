@@ -1,4 +1,4 @@
-package com.optivem.kata.hexarch.application.spi;
+package com.optivem.kata.hexarch.application;
 
 public interface DiscountRateRepository {
     double getDiscountRate();

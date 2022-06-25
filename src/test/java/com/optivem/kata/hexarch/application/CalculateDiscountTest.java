@@ -1,6 +1,7 @@
 package com.optivem.kata.hexarch.application;
 
 import com.optivem.kata.hexarch.adapters.FakeDiscountRateRepository;
+import com.optivem.kata.hexarch.application.common.BaseTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -10,19 +11,10 @@ import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CalculateDiscountTest {
-    private FakeDiscountRateRepository rateRepository;
-    private App app;
-
+public class CalculateDiscountTest extends BaseTest {
     private static Stream<Arguments> should_calculate_discount_given_positive_amount() {
         return Stream.of(Arguments.of(100.0, 0.05, 5.0),
                 Arguments.of(100.0, 0.20, 20.0));
-    }
-
-    @BeforeEach
-    private void init() {
-        rateRepository = new FakeDiscountRateRepository();
-        app = new App(rateRepository);
     }
 
     @ParameterizedTest

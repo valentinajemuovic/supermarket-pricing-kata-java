@@ -1,7 +1,4 @@
-package com.optivem.kata.hexarch.application.impl;
-
-import com.optivem.kata.hexarch.application.api.Discounting;
-import com.optivem.kata.hexarch.application.spi.DiscountRateRepository;
+package com.optivem.kata.hexarch.application;
 
 public class DiscountingImpl implements Discounting {
     private DiscountRateRepository discountRateRepository;
