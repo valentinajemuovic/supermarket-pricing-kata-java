@@ -8,6 +8,8 @@ class HexagonalArchitectureKataApplicationTests {
 
 	@Test
 	void contextLoads() {
+		var args = new String[]{};
+		HexagonalArchitectureKataApplication.main(args);
 	}
 
 }
