@@ -7,13 +7,13 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTest {
     protected FakeProductRepository productRepository;
-    protected FakeDiscountRateRepository rateRepository;
+    protected FakeDiscountRateRepository discountRateRepository;
     protected App app;
 
     @BeforeEach
     protected void init() {
         productRepository = new FakeProductRepository();
-        rateRepository = new FakeDiscountRateRepository();
-        app = new App(productRepository, rateRepository);
+        discountRateRepository = new FakeDiscountRateRepository();
+        app = new App(productRepository, discountRateRepository);
     }
 }

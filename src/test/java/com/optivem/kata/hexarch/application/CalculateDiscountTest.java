@@ -1,8 +1,6 @@
 package com.optivem.kata.hexarch.application;
 
-import com.optivem.kata.hexarch.adapters.FakeDiscountRateRepository;
 import com.optivem.kata.hexarch.application.common.BaseTest;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -20,7 +18,7 @@ public class CalculateDiscountTest extends BaseTest {
     @ParameterizedTest
     @MethodSource
     void should_calculate_discount_given_positive_amount(double amount, double discountRate, double expectedDiscountedAmount) {
-        rateRepository.setDiscountRate(discountRate);
+        discountRateRepository.setDiscountRate(discountRate);
         var discountedAmount = app.getDiscounting().calculateDiscountedAmount(amount);
         assertThat(discountedAmount).isEqualTo(expectedDiscountedAmount);
     }

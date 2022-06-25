@@ -14,6 +14,6 @@ public class App {
     }
 
     public ProductManagement getProductManagement() {
-        return new ProductManagementImpl(productRepository);
+        return new ProductManagementImpl(productRepository, discountRateRepository);
     }
 }
