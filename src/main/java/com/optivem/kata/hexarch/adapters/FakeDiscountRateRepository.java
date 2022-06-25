@@ -1,6 +1,6 @@
 package com.optivem.kata.hexarch.adapters;
 
-import com.optivem.kata.hexarch.application.ports.secondary.DiscountRateRepository;
+import com.optivem.kata.hexarch.application.spi.DiscountRateRepository;
 
 public class FakeDiscountRateRepository implements DiscountRateRepository {
     private double discountRate;

@@ -1,7 +1,8 @@
 package com.optivem.kata.hexarch.application;
 
-import com.optivem.kata.hexarch.application.ports.primary.Discounting;
-import com.optivem.kata.hexarch.application.ports.secondary.DiscountRateRepository;
+import com.optivem.kata.hexarch.application.api.Discounting;
+import com.optivem.kata.hexarch.application.impl.DiscountingImpl;
+import com.optivem.kata.hexarch.application.spi.DiscountRateRepository;
 
 public class App {
 
