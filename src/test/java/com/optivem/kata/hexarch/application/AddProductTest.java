@@ -1,9 +1,6 @@
 package com.optivem.kata.hexarch.application;
 
-import com.optivem.kata.hexarch.adapters.FakeDiscountRateRepository;
-import com.optivem.kata.hexarch.adapters.FakeProductRepository;
 import com.optivem.kata.hexarch.application.common.BaseTest;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -16,7 +13,7 @@ public class AddProductTest extends BaseTest {
         var price = 20.0;
         var expectedProduct = new Product(sku, price);
 
-        app.getProductManagement().addProduct(sku, price);
+        supermarketApp.getProductManagement().addProduct(sku, price);
 
         var retrievedProduct = productRepository.getProduct(sku);
         assertThat(retrievedProduct).isNotEmpty();

@@ -19,7 +19,7 @@ public class ViewProductTest extends BaseTest {
 
         var expectedProductDetails = new ProductDetails(sku, price, expectedDiscountPrice);
 
-        var productDetails = app.getProductManagement().viewProduct(sku);
+        var productDetails = supermarketApp.getProductManagement().viewProduct(sku);
 
         assertThat(productDetails).isEqualTo(expectedProductDetails);
     }

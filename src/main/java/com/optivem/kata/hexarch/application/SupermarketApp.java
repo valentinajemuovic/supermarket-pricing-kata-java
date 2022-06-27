@@ -1,10 +1,10 @@
 package com.optivem.kata.hexarch.application;
 
-public class App {
+public class SupermarketApp implements ISupermarketApp {
     private final ProductRepository productRepository;
     private final DiscountRateRepository discountRateRepository;
 
-    public App(ProductRepository productRepository, DiscountRateRepository discountRateRepository) {
+    public SupermarketApp(ProductRepository productRepository, DiscountRateRepository discountRateRepository) {
         this.productRepository = productRepository;
         this.discountRateRepository = discountRateRepository;
     }
