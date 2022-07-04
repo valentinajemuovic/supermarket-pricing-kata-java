@@ -1,3 +1,3 @@
-# Hexagonal Architecture Kata (Java)
+# Supermarket Pricing Kata (Java)
 
-The following kata is based on the sample example of the price discount calculation illustrated in https://alistair.cockburn.us/hexagonal-architecture/
+The idea for this kata came based on a combination of the Supermarket Pricing Kata and the price discount calculation illustrated in https://alistair.cockburn.us/hexagonal-architecture/
