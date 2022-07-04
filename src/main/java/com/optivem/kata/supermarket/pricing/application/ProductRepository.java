@@ -1,4 +1,4 @@
-package com.optivem.kata.hexarch.application;
+package com.optivem.kata.supermarket.pricing.application;
 
 import java.util.Optional;
 

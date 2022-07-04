@@ -1,13 +1,13 @@
-package com.optivem.kata.hexarch;
+package com.optivem.kata.supermarket.pricing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HexagonalArchitectureKataApplication {
+public class SupermarketPricingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HexagonalArchitectureKataApplication.class, args);
+		SpringApplication.run(SupermarketPricingApplication.class, args);
 	}
 
 }

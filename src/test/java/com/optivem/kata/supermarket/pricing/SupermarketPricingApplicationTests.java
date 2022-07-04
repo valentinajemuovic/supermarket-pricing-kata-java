@@ -1,15 +1,15 @@
-package com.optivem.kata.hexarch;
+package com.optivem.kata.supermarket.pricing;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HexagonalArchitectureKataApplicationTests {
+class SupermarketPricingApplicationTests {
 
 	@Test
 	void contextLoads() {
 		var args = new String[]{};
-		HexagonalArchitectureKataApplication.main(args);
+		SupermarketPricingApplication.main(args);
 	}
 
 }

@@ -1,7 +1,7 @@
-package com.optivem.kata.hexarch.adapters;
+package com.optivem.kata.supermarket.pricing.adapters;
 
-import com.optivem.kata.hexarch.application.Product;
-import com.optivem.kata.hexarch.application.ProductRepository;
+import com.optivem.kata.supermarket.pricing.application.Product;
+import com.optivem.kata.supermarket.pricing.application.ProductRepository;
 
 import java.util.HashMap;
 import java.util.Optional;
