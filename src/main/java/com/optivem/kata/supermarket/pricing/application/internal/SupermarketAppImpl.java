@@ -3,19 +3,19 @@ package com.optivem.kata.supermarket.pricing.application.internal;
 import com.optivem.kata.supermarket.pricing.application.ports.*;
 
 public class SupermarketAppImpl implements SupermarketApp {
-    private final ProductRepository productRepository;
-    private final DiscountRateRepository discountRateRepository;
+    private final ProductManagement productManagement;
+    private final DiscountManagement discountManagement;
 
     public SupermarketAppImpl(ProductRepository productRepository, DiscountRateRepository discountRateRepository) {
-        this.productRepository = productRepository;
-        this.discountRateRepository = discountRateRepository;
+        this.productManagement = new ProductManagementImpl(productRepository, discountRateRepository);
+        this.discountManagement = new DiscountManagementImpl(discountRateRepository);
     }
 
     public ProductManagement getProductManagement() {
-        return new ProductManagementImpl(productRepository, discountRateRepository);
+        return productManagement;
     }
 
     public DiscountManagement getDiscountManagement() {
-        return new DiscountManagementImpl(discountRateRepository);
+        return discountManagement;
     }
 }
