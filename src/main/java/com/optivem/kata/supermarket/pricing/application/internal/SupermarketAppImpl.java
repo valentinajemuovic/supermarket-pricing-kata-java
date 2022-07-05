@@ -2,7 +2,7 @@ package com.optivem.kata.supermarket.pricing.application.internal;
 
 import com.optivem.kata.supermarket.pricing.application.ports.*;
 
-public class SupermarketAppImpl implements com.optivem.kata.supermarket.pricing.application.ports.SupermarketApp {
+public class SupermarketAppImpl implements SupermarketApp {
     private final ProductRepository productRepository;
     private final DiscountRateRepository discountRateRepository;
 

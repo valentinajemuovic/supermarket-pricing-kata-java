@@ -18,12 +18,13 @@ public class ProductManagementImpl implements ProductManagement {
     }
 
     @Override
-    public ProductDetails viewProduct(String sku) {
+    public ProductDetails viewProductDetails(String sku) {
         var product = productRepository.getProduct(sku).get();
         var discountRate = discountRateRepository.getDiscountRate();
 
         var regularPrice = product.getPrice();
-        var discountedPrice = regularPrice * discountRate;
+        var multiplier = 1 - discountRate;
+        var discountedPrice = regularPrice * multiplier;
 
         return new ProductDetails(sku, regularPrice, discountedPrice);
     }

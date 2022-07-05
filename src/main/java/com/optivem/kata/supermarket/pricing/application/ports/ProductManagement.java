@@ -3,5 +3,5 @@ package com.optivem.kata.supermarket.pricing.application.ports;
 public interface ProductManagement {
     void addProduct(String sku, double price);
 
-    ProductDetails viewProduct(String sku);
+    ProductDetails viewProductDetails(String sku);
 }
