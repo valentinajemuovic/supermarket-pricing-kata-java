@@ -3,7 +3,6 @@ package com.optivem.kata.supermarket.pricing.application.internal;
 import com.optivem.kata.supermarket.pricing.application.ports.*;
 
 public class ProductManagementImpl implements ProductManagement {
-
     private ProductRepository productRepository;
     private DiscountRateRepository discountRateRepository;
 
