@@ -1,4 +1,4 @@
-package com.optivem.kata.supermarket.pricing.application;
+package com.optivem.kata.supermarket.pricing.application.ports;
 
 public interface DiscountRateRepository {
     double getDiscountRate();

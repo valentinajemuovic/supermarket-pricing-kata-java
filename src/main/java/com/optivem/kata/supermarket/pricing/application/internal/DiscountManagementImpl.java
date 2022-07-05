@@ -1,4 +1,7 @@
-package com.optivem.kata.supermarket.pricing.application;
+package com.optivem.kata.supermarket.pricing.application.internal;
+
+import com.optivem.kata.supermarket.pricing.application.ports.DiscountManagement;
+import com.optivem.kata.supermarket.pricing.application.ports.DiscountRateRepository;
 
 public class DiscountManagementImpl implements DiscountManagement {
 

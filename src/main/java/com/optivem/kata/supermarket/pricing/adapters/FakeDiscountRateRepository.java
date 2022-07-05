@@ -1,6 +1,6 @@
 package com.optivem.kata.supermarket.pricing.adapters;
 
-import com.optivem.kata.supermarket.pricing.application.DiscountRateRepository;
+import com.optivem.kata.supermarket.pricing.application.ports.DiscountRateRepository;
 
 public class FakeDiscountRateRepository implements DiscountRateRepository {
     private double discountRate;

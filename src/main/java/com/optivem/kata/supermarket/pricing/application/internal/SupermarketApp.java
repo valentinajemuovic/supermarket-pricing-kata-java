@@ -1,4 +1,6 @@
-package com.optivem.kata.supermarket.pricing.application;
+package com.optivem.kata.supermarket.pricing.application.internal;
+
+import com.optivem.kata.supermarket.pricing.application.ports.*;
 
 public class SupermarketApp implements ISupermarketApp {
     private final ProductRepository productRepository;

@@ -1,6 +1,8 @@
 package com.optivem.kata.supermarket.pricing.application;
 
 import com.optivem.kata.supermarket.pricing.application.common.BaseTest;
+import com.optivem.kata.supermarket.pricing.application.ports.Product;
+import com.optivem.kata.supermarket.pricing.application.ports.ProductDetails;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
